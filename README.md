@@ -3,7 +3,7 @@
 [![Package Version](https://img.shields.io/hexpm/v/defangle)](https://hex.pm/packages/defangle)
 [![Hex Docs](https://img.shields.io/badge/hex-docs-ffaff3)](https://hexdocs.pm/defangle/)
 
-Defangle is a Gleam library for defanging URLs. It is useful for making URLs safe to share.
+Defangle is a Gleam library for defanging URLs, Emails, and IP addresses making them safe to share.
 
 <img src="https://github.com/brittonhayes/defangle/blob/main/.github/assets/defangle-logo.png" width="120">
 

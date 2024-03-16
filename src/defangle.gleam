@@ -1,6 +1,6 @@
 /// Defangle contains functions for defanging IP addresses, URLs, and email addresses.
-/// Defanging is the process of replacing certain characters with other characters to make
-/// them safe to share in contexts where they might be clicked.
+/// Defanging is the process of replacing certain characters in links to make
+/// them safe to share in contexts where they might otherwise be clicked.
 import gleam/string
 
 /// Replace the `.` in the IP address with `[.]`

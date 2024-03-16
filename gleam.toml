@@ -1,7 +1,7 @@
 name = "defangle"
-version = "1.0.0"
+version = "1.0.1"
 
-description = "Defangle is a Gleam library for defanging URLs, Emails, and IP addresses making URLs safe to share."
+description = "Defangle is a Gleam library for defanging URLs, Emails, and IP addresses making them safe to share."
 licences = ["Apache-2.0"]
 repository = { type = "github", user = "brittonhayes", repo = "defangle" }
 links = [{ title = "Website", href = "https://gleam.run" }]
