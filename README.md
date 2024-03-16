@@ -5,6 +5,8 @@
 
 Defangle is a Gleam library for defanging URLs. It is useful for making URLs safe to share.
 
+<img src="./github/assets/defangle-logo.png" width="120">
+
 ## 📥 Install defangle
 
 ```sh
