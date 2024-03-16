@@ -1,7 +1,6 @@
 /// Defangle contains functions for defanging IP addresses, URLs, and email addresses.
 /// Defanging is the process of replacing certain characters with other characters to make
 /// them safe to share in contexts where they might be clicked.
-
 import gleam/string
 
 /// Replace the `.` in the IP address with `[.]`
@@ -28,4 +27,3 @@ pub fn email(email: String) -> String {
   |> string.replace("@", "[at]")
   |> string.replace(".", "[.]")
 }
-
