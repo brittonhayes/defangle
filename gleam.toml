@@ -1,5 +1,5 @@
 name = "defangle"
-version = "1.0.1"
+version = "1.0.2"
 
 description = "Defangle is a Gleam library for defanging URLs, Emails, and IP addresses making them safe to share."
 licences = ["Apache-2.0"]
