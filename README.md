@@ -22,22 +22,22 @@ pub fn main() {
   
   // Defang a URL to make it safe to share
   "https://www.suspicious-url.com"
-  |> defangle.url
+  |> defangle.defang_url
   // "hxxps[://]www[.]suspicious-url[.]com"
 
   // Defang an email address to make it safe to share
   "lucy@malicious.gleam"
-  |> defangle.email
+  |> defangle.defang_email
   // "lucy[at]suspicious-url[.]com"
 
   // Defang an IP address to make it safe to share
   "103.253.144.32"
-  |> defangle.ip
+  |> defangle.defang_ip
   // "103[.]253[.]144[.]32"
   
   // Defang an IPv6 address to make it safe to share
   "2001:0db8:85a3:0000:0000:8a2e:0370:7334"
-  |> defangle.ip
+  |> defangle.defang_ip
   // "2001[:]0db8[:]85a3[:]0000[:]0000[:]8a2e[:]0370[:]7334
 }
 ```
