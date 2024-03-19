@@ -8,15 +8,17 @@ import gleam/string
 /// and the `http` with `hxxp`, 
 /// and the `://` with `[://]`
 pub fn defang(url: String) -> String {
-  let parts = string.split(url, "@")
-  case parts {
+  case string.split(url, "@") {
     [user, domain] -> defang_email(user, domain)
-    _ -> defang_ip(url)
+    _ -> defang_url(url)
   }
 }
 
+/// Replace the `.` in the URL with `[.]`, 
+/// and the `http` with `hxxp`,
+/// and the `://` with `[://]`
 pub fn defang_url(domain: String) -> String {
-  let result = case string.contains(domain, "[.]") {
+  case string.contains(domain, "[.]") {
     True -> domain
     False ->
       domain
@@ -24,19 +26,16 @@ pub fn defang_url(domain: String) -> String {
       |> string.replace("http", "hxxp")
       |> string.replace("://", "[://]")
   }
-  result
 }
 
 /// Replace the `.` in the IP address with `[.]`
 pub fn defang_ip(ip: String) -> String {
-  let result = case string.contains(ip, "[.]") {
+  case string.contains(ip, "[.]") {
     True -> ip
     False ->
       ip
       |> string.replace(".", "[.]")
-      |> string.replace(":", "[:]")
   }
-  result
 }
 
 /// Replace the `@` in the email with `[at]`,
